@@ -27,12 +27,12 @@ Desarrollo laboral: Matenimiento de computadores y Teatro.
 Pais de Origen: Colombia.
 Pasatiempos: Jugar Call of Duty..
 
-Nombre:
-Edad:
-Profesion:
-Desarrollo laboral:
-Pais de Origen:
-Pasatiempos:
+Nombre: Hugo Marcelo Ruiz
+Edad: 56
+Profesion: Contador
+Desarrollo laboral: Auditoria y tributos de empresas agropecuarias.
+Pais de Origen: Argentina
+Pasatiempos: Idiomas.
 
 Nombre:
 Edad:
