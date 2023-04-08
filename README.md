@@ -19,12 +19,13 @@ Desarrollo laboral: instalacion de internet fibra optica
 Pais de Origen:Colombia
 Pasatiempos: jugar base ball
 
-Nombre:
-Edad:
-Profesion:
-Desarrollo laboral:
-Pais de Origen:
-Pasatiempos:
+Nombre: Julián López López.
+Edad: 37 Años.
+Profesion: lic. Arte Dramático, estudiante Desarrollo Web Full Stack en 
+Digital House.
+Desarrollo laboral: Matenimiento de computadores y Teatro. 
+Pais de Origen: Colombia.
+Pasatiempos: Jugar Call of Duty..
 
 Nombre:
 Edad:
