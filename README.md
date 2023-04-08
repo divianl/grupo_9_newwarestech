@@ -12,12 +12,12 @@ Pais de Origen: Colombia
 Pasatiempos: Ir a restaurantes, ir al cine, bailar. 
 
 
-Nombre:
-Edad:
-Profesion:
-Desarrollo laboral:
-Pais de Origen:
-Pasatiempos:
+Nombre: Yesner Benitez.
+Edad:34
+Profesion: Programador
+Desarrollo laboral: instalacion de internet fibra optica
+Pais de Origen:Colombia
+Pasatiempos: jugar base ball
 
 Nombre:
 Edad:
