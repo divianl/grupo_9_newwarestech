@@ -34,16 +34,11 @@ Desarrollo laboral: Auditoria y tributos de empresas agropecuarias.
 Pais de Origen: Argentina
 Pasatiempos: Idiomas.
 
-Nombre:
-Edad:
-Profesion:
-Desarrollo laboral:
-Pais de Origen:
-Pasatiempos:
+Nombre: Julia Agostino
+Edad: 21
+Profesion: Estudiante en Desarrollo Web Full Stack de DH
+Desarrollo laboral: 
+Pais de Origen: Argentina
+Pasatiempos: Entrenar
 
-Nombre:
-Edad:
-Profesion:
-Desarrollo laboral:
-Pais de Origen:
-Pasatiempos:
+
