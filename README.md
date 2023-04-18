@@ -62,9 +62,9 @@ Este proyecto se encuentra actualmente en desarrollo, y se espera que próximame
 
 ### **Ejemplo de Paginas para desarrollar el proyecto:**
 1. [Compuworking](https://www.computerworking.com.co/ "Compuworking")
-    reseña:
+    reseña:Compuworking es una página web de venta de dispositivos de tecnológica, cuenta con una gran variedad de productos. Esta página la tomamos como referencia, ya que es fácil de navegar, y contiene los tipos de vistas o paginas que necesitamos realizar en nuestro proyecto basado en los requerimientos del spring 1.
 2. [Compulago](https://www.compulago.net/ "Compulago")
-    reseña: Compuworking es una página web de venta de dispositivos de tecnológica, cuenta con una gran variedad de productos. Esta página la tomamos como referencia, ya que es fácil de navegar, y contiene los tipos de vistas o paginas que necesitamos realizar en nuestro proyecto basado en los requerimientos del spring 1. 
+    reseña: 
 3. [Fravega](https://www.fravega.com/ "Fravega")
     reseña: Elegí esta página como herramienta de referencia porque me pareció bastante objetiva respecto a su contenido. Tiene sus elementos bien distribuidos y son muy claros a la hora de buscarlos; también me pareció adecuado el uso de la paleta de colores, ya que no opaca ningún tipo de texto e imágen.
 4. [Musimundo](https://www.musimundo.com/ "Musimundo")
