@@ -1,5 +1,3 @@
-En esta pagina hicimos la edicion del archivo .md [**editor.md**](https://pandao.github.io/editor.md/en.html "editor.md")
-
 Link de acceso al [**repositorio**](https://github.com/divianl/grupo_9_newwarestech.git "repositorio")
 # NEWWARESTECH
 Este proyecto consiste en el desarrollo de una página web de venta de artículos electrónicos, en la que los usuarios puedan explorar una amplia variedad de productos electrónicos, incluyendo dispositivos móviles, computadoras, tablets, televisores, consolas de videojuegos, entre otros. 
