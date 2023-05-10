@@ -16,6 +16,9 @@ app.get('/login', (req,res)=>{
 app.get('/productcart', (req,res)=>{
     res.sendFile(path.join(__dirname, '/views/productcart.html'))
 })
+app.get('/productdetail', (req,res)=>{
+    res.sendFile(path.join(__dirname, '/views/productDetail.html'))
+})
 
 app.listen(3005, ()=>{
     console.log("Servidor corriendo en el puerto 3005");

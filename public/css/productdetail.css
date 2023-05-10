@@ -1,0 +1,70 @@
+/* Estilos main*/
+
+*{
+    border: solid 1px;
+}
+
+.main{
+    height: 70%;
+    background-color: #86C7ED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main1, .main2{
+    width: 40%;
+    height: 90%;
+}
+
+/* lado izquierdo*/
+.main1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.imagen-producto{
+    width: 100%;
+    height: 70%;
+}
+
+.imagen-producto-vistas{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+.vista-derecha, .vista-izquierda, .vista-posterior{
+    width: 25%;
+}
+
+/* lado derecho*/
+.main2{
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    justify-content: space-around;
+}
+
+.main2-cantidad{
+    display: flex;
+    flex-direction: column;
+}
+
+.ctn{
+    width: 10%;
+}
