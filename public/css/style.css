@@ -304,9 +304,13 @@ footer{
         font-size: 25px;
     }
     .busqueda2{
-        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
-    
+
+    .busqueda2 p{
+        font-size: 20px;
+    }
     /*footer*/
     .about-us1 p, b{
         font-size: 16px;
