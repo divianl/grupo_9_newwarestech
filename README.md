@@ -69,3 +69,6 @@ Este proyecto se encuentra actualmente en desarrollo, y se espera que próximame
     reseña: Musimundo es una cadena de electrodomésticos, artículos para el hogar, informática y entretenimiento de Argentina. En 2011, la marca fue adquirida por las empresas Carsa S.A y Megatone S.A para ampliar su presencia en el gran Buenos Aires. De esta forma, los antiguos locales de Megatone y Carsa pasaron a llamarse Musimundo, y la franquicia pasó a ser una marca insignia en venta de electrónica y hogar.
 5. [Comprando](https://comprando.co/ "Comprando")
     reseña: Es una tienda virtual propiedad de un conglomerado de tiendas virtuales que venden productos innovadores en Colombia de todo lo relacionado con tecnología, ropa, electrodomésticos y más, que busca productos en todo el mundo que sean innovadores y que se conviertan en una tendencia. Bajo este criterio, estamos seguros de que siempre tendremos algo único que ofrecerte. Es por eso que nos gustó la página, por la simplicidad de la página, colores calidos e imagenes llamativas, la interracción si bien es simple las animaciones son faciles de identificar el producto.
+
+
+Link de acceso a Trello https://trello.com/b/jAKlZdcA/grupo-9-newwarestech
