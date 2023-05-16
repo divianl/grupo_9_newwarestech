@@ -4,9 +4,7 @@
   "description": "Link de acceso al [**repositorio**](https://github.com/divianl/grupo_9_newwarestech.git \"repositorio\")\r # NEWWARESTECH\r Este proyecto consiste en el desarrollo de una página web de venta de artículos electrónicos, en la que los usuarios puedan explorar una amplia variedad de productos electrónicos, incluyendo dispositivos móviles, computadoras, tablets, televisores, consolas de videojuegos, entre otros. \r <p>",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js",
     "start": "node app.js",
-    "start2": "node app",
     "dev": "npx nodemon app"
   },
   "repository": {

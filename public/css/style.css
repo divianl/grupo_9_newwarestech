@@ -239,7 +239,7 @@ footer{
 
 /*Standard Media query 576, 768, 992, 1200*/
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
     /*navbar*/
     .nav-botones {
         flex-direction: column;
@@ -295,7 +295,7 @@ footer{
     }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     /*navbar*/
     .nav-botones {
         flex-direction: column;
@@ -327,7 +327,7 @@ footer{
 }
 
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
     /*navbar*/
     .nav-botones {
     flex-direction: row;
@@ -345,8 +345,4 @@ footer{
     .about-us1 p, b{
         font-size: 16px;
     }
-}
-
-@media screen and (min-width: 1200px) {
-    
 }

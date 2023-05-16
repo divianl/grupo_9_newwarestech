@@ -75,7 +75,16 @@
 }
 
 
-@media screen and (max-width: 576px) {
+@media (min-width: 576px) {
+    /*main*/
+    .contenedor-promociones{
+        display: none;
+    }
+    .carrousel{
+        width: 90%; 
+    }
+}
+@media (min-width: 577px){
     /*main*/
     .contenedor-promociones{
         display: none;
