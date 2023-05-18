@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main/home.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product/productdetail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Carrito de compras</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <%- include('../partials/header') %>
+
+      <section class="main">
+        <div class="container-productdetail">
+          <div class="main1">
+            <div class="imagen-producto">
+              <img src="images/celular-frontal.jpg" alt="" />
+            </div>
+            <div class="imagen-producto-vistas">
+              <div class="vista derecha">
+                <img src="images/vista1.png" alt="" />
+              </div>
+              <div class="vista izquierda">
+                <img src="images/vista2.png" alt="" />
+              </div>
+              <div class="vista posterior">
+                <img src="images/vista3.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="main2">
+            <p>Nombre del producto</p>
+            <p>$...</p>
+            <form action="" method="post">
+              <p>Cantidad de cuotas + precio</p>
+              <p>% con efectivo o transferencia</p>
+              <div class="main2-color">
+                <p>COLOR:</p>
+              </div>
+              <div class="main2-talle">
+                <div class="uno">
+                    <label>Talla:</label>
+                    <label><input type="checkbox" value="XS">XS</label>
+                    <label><input type="checkbox" value="S">S</label>
+                    <label><input type="checkbox" value="M">M</label>
+                </div>
+              </div>
+              <div class="main2-cantidad">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" name="cantidad" id="cnt" class="ctn" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <%- include('../partials/footer') %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css//user/register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Formulario Registro</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <%- include('../partials/header') %>
+
+      <section class="main">
+        <div class="header"><h3>CREA TU CUENTA</h3></div>
+        <div class="contenedor">
+          <form>
+            <label for="nombre" placeholder="Escribe su nombre completo"
+              >NOMBRE Y APELLIDOS</label
+            >
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="email" placeholder="ingresa correo completo"
+              >EMAIL</label
+            >
+            <input type="email" id="email" name="email" required />
+
+            <label for="contrasena">CONTRASEÑA</label>
+            <input type="password" id="contrasena" name="contrasena" required />
+
+            <label for="confirmar-contrasena">CONFIRMAR CONTRASEÑA</label>
+            <input
+              type="password"
+              id="confirmar-contrasena"
+              name="confirmar-contrasena"
+              required
+            />
+
+            <label>
+              <input type="checkbox" name="robot" required />
+              No soy un robot
+            </label>
+
+            <input type="submit" value="Crear Cuenta" />
+          </form>
+          <p>¿Ya tienes una cuenta? <a href="#">Inicia sesión</a>.</p>
+        </div>
+      </section>
+      <%- include('../partials/footer') %>
+    </div>
+  </body>
+</html>
