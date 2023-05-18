@@ -11,4 +11,17 @@
 -Se creó el archivo weekly.
 -Se actualizó el archivo retro.
 
+<p>
+
+**17 de mayo**
+
+-Instalamos EJS y lo configuramos.
+-Convertimos archivos a .ejs.
+-Cambiamos los .sendFile por .render.
+-Comenzamos a armar partials.
+-Actualizamos Trello. 
+-Definimos tareas.
+-Actualizamos el Sprint 3.
+
+
 
