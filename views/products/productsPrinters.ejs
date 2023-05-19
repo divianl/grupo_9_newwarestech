@@ -14,11 +14,11 @@
     <%- include('../partials/header') %>
     <main>
         <div class="productContainer">
-        <% listado.forEach(listado=>{%>
+        <% listadoImpresoras.forEach(listadoImpresoras=>{%>
             <article class="article">
-                <h1><%= listado.name %></h1>
-                <img src="<%= listado.image %>" alt="">
-                <h3><%= listado.price %></h3>
+                <h1><%= listadoImpresoras.name %></h1>
+                <img src="<%= listadoImpresoras.image %>" alt="">
+                <h3><%= listadoImpresoras.price %></h3>
                 <input type="button" onclick="alert('Agregado al carrito');" value="Add to cart">
             </article>
         <%}) %>

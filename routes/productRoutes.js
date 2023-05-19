@@ -8,4 +8,6 @@ router.get('/productDetail', productController.getDetail);
 
 router.get('/productsPhones', productController.getPhones);
 
+router.get('/productsPrinters', productController.getPrinters);
+
 module.exports = router;

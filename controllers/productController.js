@@ -77,7 +77,65 @@ const productController = {
                 },
             ]
         res.render('productsPhones', {listado}); 
+    },  
+
+    getPrinters:(req,res)=>{
+
+        const listadoImpresoras = [
+                {
+                    name: 'printer1',
+                    image:'/images/impresoras/impresora_1.png',
+                    price: '$280'
+                },
+                {
+                    name: 'printer2',
+                    image:'/images/impresoras/impresora_2.png',
+                    price: '$280'
+                },
+                {
+                    name: 'printer3',
+                    image:'/images/impresoras/impresora_3.png',
+                    price: '$280'
+                },
+                {
+                    name: 'printer4',
+                    image:'/images/impresoras/impresora_4.png',
+                    price: '$280'
+                },
+                {
+                    name: 'printer5',
+                    image:'/images/impresoras/impresora_5.png',
+                    price: '$280'
+                },
+                {
+                    name: 'printer6',
+                    image:'/images/impresoras/impresora_1.png',
+                    price: '$280'
+                },
+                {
+                    name: 'printer7',
+                    image:'/images/impresoras/impresora_2.png',
+                    price: '$280'
+                },
+                {
+                    name: 'printer8',
+                    image:'/images/impresoras/impresora_3.png',
+                    price: '$280'
+                },
+                {
+                    name: 'printer9',
+                    image:'/images/impresoras/impresora_4.png',
+                    price: '$280'
+                },
+                {
+                    name: 'printer10',
+                    image:'/images/impresoras/impresora_5.png',
+                    price: '$280'
+                },
+            ]
+        res.render('productsPrinters', {listadoImpresoras}); 
     }
 }
+
 
 module.exports = productController;
