@@ -21,9 +21,8 @@ app.use(mainRoutes);
 app.use(userRoutes);
 app.use(productRoutes);
 
-
 app.use(express.static(publicPath));
 
 app.listen(3005, ()=>{
-    console.log("Servidor corriendo en el puerto 3005");
+    console.log("Servidor corriendo http://localhost:3005/");
 });
