@@ -23,5 +23,13 @@
 -Definimos tareas.
 -Actualizamos el Sprint 3.
 
+<p>
+
+**22 de mayo**
+
+-Revisión avance del sprint.
+-Actualización del tablero Trello (tareas a realizar).
+-Creación de vistas (productsAccesorios, productsInformatica).
+-Actualización del Sprint 3.
 
 
