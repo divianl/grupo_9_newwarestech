@@ -32,6 +32,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content:space-around;
+    flex-direction: row;
+    border: none;
 }
 .nav-logo{
     display: flex;

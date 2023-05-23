@@ -17,64 +17,41 @@ const productController = {
         const listado = [
                 {
                     id: 1,
-                    name: 'name1',
-                    image:'/images/celulares/A03.png',
-                    price: '$450'
+                    name: 'xiaomi',
+                    image:'/images/celulares/xiaomi1.png',
+                    price: '$70.000'
                 },
                 {
                     id: 2,
-                    name: 'name2',
-                    image:'/images/celulares/A12.png',
-                    price: '$450'
+                    name: 'xiaomi',
+                    image:'/images/celulares/xiaomi2.png',
+                    price: '$92.000'
                 },
                 {
                     id: 3,
-                    name: 'name3',
-                    image:'/images/celulares/A32.png',
-                    price: '$450'
+                    name: 'iphone',
+                    image:'/images/celulares/iphone1.png',
+                    price: '$350.000'
                 },
                 {
                     id: 4,
-                    name: 'name4',
-                    image:'/images/celulares/A50.png',
-                    price: '$450'
+                    name: 'iphone',
+                    image:'/images/celulares/iphone2.png',
+                    price: '$280.000'
                 },
                 {
                     id: 5,
-                    name: 'name5',
-                    image:'/images/celulares/A03.png',
-                    price: '$450'
+                    name: 'huawei',
+                    image:'/images/celulares/huawei1.png',
+                    price: '$62.000'
                 },
                 {
                     id: 6,
-                    name: 'name6',
-                    image:'/images/celulares/A12.png',
-                    price: '$450'
+                    name: 'huawei',
+                    image:'/images/celulares/huawei2.png',
+                    price: '$75.000'
                 },
-                {
-                    id: 7,
-                    name: 'name7',
-                    image:'/images/celulares/A32.png',
-                    price: '$450'
-                },
-                {
-                    id: 8,
-                    name: 'name8',
-                    image:'/images/celulares/A50.png',
-                    price: '$450'
-                },
-                {
-                    id: 9,
-                    name: 'name9',
-                    image:'/images/celulares/A03.png',
-                    price: '$450'
-                },
-                {
-                    id: 10,
-                    name: 'name10',
-                    image:'/images/celulares/A50.png',
-                    price: '$450'
-                },
+
             ]
         res.render('productsPhones', {listado}); 
     },  
@@ -83,54 +60,35 @@ const productController = {
 
         const listadoImpresoras = [
                 {
-                    name: 'printer1',
+                    name: 'impresora epton',
                     image:'/images/impresoras/impresora_1.png',
-                    price: '$280'
+                    price: '$80.000'
                 },
                 {
-                    name: 'printer2',
+                    name: 'impresora hp',
+                    image:'/images/impresoras/images.png',
+                    price: '$99.999'
+                },
+                {
+                    name: 'impresora hp',
                     image:'/images/impresoras/impresora_2.png',
-                    price: '$280'
+                    price: '$110.000'
                 },
                 {
-                    name: 'printer3',
+                    name: 'impresora epson',
                     image:'/images/impresoras/impresora_3.png',
-                    price: '$280'
+                    price: '$130.000'
                 },
                 {
-                    name: 'printer4',
+                    name: 'impresora epson',
                     image:'/images/impresoras/impresora_4.png',
-                    price: '$280'
+                    price: '$152.000'
                 },
                 {
-                    name: 'printer5',
-                    image:'/images/impresoras/impresora_5.png',
-                    price: '$280'
-                },
-                {
-                    name: 'printer6',
-                    image:'/images/impresoras/impresora_1.png',
-                    price: '$280'
-                },
-                {
-                    name: 'printer7',
-                    image:'/images/impresoras/impresora_2.png',
-                    price: '$280'
-                },
-                {
-                    name: 'printer8',
-                    image:'/images/impresoras/impresora_3.png',
-                    price: '$280'
-                },
-                {
-                    name: 'printer9',
-                    image:'/images/impresoras/impresora_4.png',
-                    price: '$280'
-                },
-                {
-                    name: 'printer10',
-                    image:'/images/impresoras/impresora_5.png',
-                    price: '$280'
+                    name: 'impresora hp',
+                    image:'/images/impresoras/images (4).png',
+                    price: '$230.000'
+
                 },
             ]
         res.render('productsPrinters', {listadoImpresoras}); 
@@ -142,36 +100,73 @@ const productController = {
                 {
                     name: 'auriculares',
                     image:'/images/accesorios/auriculares/auricular1.png',
-                    price: '$280'
+                    price: '$14.999'
                 },
                 {
                     name: 'computadora',
                     image:'/images/accesorios/computadoras/computadora1.png',
-                    price: '$280'
+                    price: '$240.000'
                 },
                 {
                     name: 'mouse',
                     image:'/images/accesorios/mouse/mouse1.png',
-                    price: '$280'
+                    price: '$4.800'
                 },
                 {
                     name: 'parlantes',
                     image:'/images/accesorios/parlantes/parlante1.png',
-                    price: '$280'
+                    price: '$3.500'
                 },
                 {
                     name: 'sillas',
                     image:'/images/accesorios/sillas/silla1.png',
-                    price: '$280'
+                    price: '$38.000'
                 },
                 {
                     name: 'teclados',
                     image:'/images/accesorios/teclados/teclado1.png',
-                    price: '$280'
+                    price: '$22.000'
                 },
             ]
         res.render('productsAccesorios', {listadoAccesorios}); 
-    }
+    },
+
+    getInformatica:(req,res)=>{
+
+        const listadoInformatica = [
+                {
+                    name: 'excel',
+                    image:'/images/informatica/excel.png',
+                    price: '$280'
+                },
+                {
+                    name: 'word',
+                    image:'/images/informatica/word.png',
+                    price: '$280'
+                },
+                {
+                    name: 'powerpoint',
+                    image:'/images/informatica/powerpoint.png',
+                    price: '$280'
+                },
+                {
+                    name: 'outlook',
+                    image:'/images/informatica/outlook.png',
+                    price: '$280'
+                },
+                {
+                    name: 'one note',
+                    image:'/images/informatica/one.png',
+                    price: '$280'
+                },
+                {
+                    name: 'seguridad de windows',
+                    image:'/images/informatica/seguridad.png',
+                    price: '$280'
+                },
+            ]
+        res.render('productsInformatica', {listadoInformatica}); 
+    },
 }
 
 
