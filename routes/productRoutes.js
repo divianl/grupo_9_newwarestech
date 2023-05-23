@@ -10,4 +10,8 @@ router.get('/productsPhones', productController.getPhones);
 
 router.get('/productsPrinters', productController.getPrinters);
 
+// router.get('/productsInformatica', productController.getInformatica);
+
+router.get('/productsAccesorios', productController.getAccesorios);
+
 module.exports = router;
