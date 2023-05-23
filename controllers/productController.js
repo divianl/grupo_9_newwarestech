@@ -18,61 +18,61 @@ const productController = {
                 {
                     id: 1,
                     name: 'name1',
-                    image:'/images/A03.png',
+                    image:'/images/celulares/A03.png',
                     price: '$450'
                 },
                 {
                     id: 2,
                     name: 'name2',
-                    image:'/images/A12.png',
+                    image:'/images/celulares/A12.png',
                     price: '$450'
                 },
                 {
                     id: 3,
                     name: 'name3',
-                    image:'/images/A32.png',
+                    image:'/images/celulares/A32.png',
                     price: '$450'
                 },
                 {
                     id: 4,
                     name: 'name4',
-                    image:'/images/A50.png',
+                    image:'/images/celulares/A50.png',
                     price: '$450'
                 },
                 {
                     id: 5,
                     name: 'name5',
-                    image:'/images/A03.png',
+                    image:'/images/celulares/A03.png',
                     price: '$450'
                 },
                 {
                     id: 6,
                     name: 'name6',
-                    image:'/images/A12.png',
+                    image:'/images/celulares/A12.png',
                     price: '$450'
                 },
                 {
                     id: 7,
                     name: 'name7',
-                    image:'/images/A32.png',
+                    image:'/images/celulares/A32.png',
                     price: '$450'
                 },
                 {
                     id: 8,
                     name: 'name8',
-                    image:'/images/A50.png',
+                    image:'/images/celulares/A50.png',
                     price: '$450'
                 },
                 {
                     id: 9,
                     name: 'name9',
-                    image:'/images/A03.png',
+                    image:'/images/celulares/A03.png',
                     price: '$450'
                 },
                 {
                     id: 10,
                     name: 'name10',
-                    image:'/images/A50.png',
+                    image:'/images/celulares/A50.png',
                     price: '$450'
                 },
             ]
@@ -84,52 +84,52 @@ const productController = {
         const listadoImpresoras = [
                 {
                     name: 'printer1',
-                    image:'/images/accesorios/impresora_1.png',
+                    image:'/images/impresoras/impresora_1.png',
                     price: '$280'
                 },
                 {
                     name: 'printer2',
-                    image:'/images/accesorios/impresora_2.png',
+                    image:'/images/impresoras/impresora_2.png',
                     price: '$280'
                 },
                 {
                     name: 'printer3',
-                    image:'/images/accesorios/impresora_3.png',
+                    image:'/images/impresoras/impresora_3.png',
                     price: '$280'
                 },
                 {
                     name: 'printer4',
-                    image:'/images/accesorios/impresora_4.png',
+                    image:'/images/impresoras/impresora_4.png',
                     price: '$280'
                 },
                 {
                     name: 'printer5',
-                    image:'/images/accesorios/impresora_5.png',
+                    image:'/images/impresoras/impresora_5.png',
                     price: '$280'
                 },
                 {
                     name: 'printer6',
-                    image:'/images/accesorios/impresora_1.png',
+                    image:'/images/impresoras/impresora_1.png',
                     price: '$280'
                 },
                 {
                     name: 'printer7',
-                    image:'/images/accesorios/impresora_2.png',
+                    image:'/images/impresoras/impresora_2.png',
                     price: '$280'
                 },
                 {
                     name: 'printer8',
-                    image:'/images/accesorios/impresora_3.png',
+                    image:'/images/impresoras/impresora_3.png',
                     price: '$280'
                 },
                 {
                     name: 'printer9',
-                    image:'/images/accesorios/impresora_4.png',
+                    image:'/images/impresoras/impresora_4.png',
                     price: '$280'
                 },
                 {
                     name: 'printer10',
-                    image:'/images/accesorios/impresora_5.png',
+                    image:'/images/impresoras/impresora_5.png',
                     price: '$280'
                 },
             ]

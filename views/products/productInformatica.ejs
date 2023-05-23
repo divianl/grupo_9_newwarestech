@@ -19,7 +19,10 @@
                 <h1><%= listadoInformatica.name %></h1>
                 <img src="<%= listadoInformatica.image %>" alt="">
                 <h3><%= listadoInformatica.price %></h3>
-                <input type="button" onclick="alert('Agregado al carrito');" value="Add to cart">
+                <div class="botones">
+                    <input type="button" onclick="alert('Agregado al carrito');" value="Add to cart">
+                    <a href="/productDetail" target="_blank" ><input type="button" value="Ver en detalle"></a>    
+                </div>
             </article>
         <%}) %>
         <br>    

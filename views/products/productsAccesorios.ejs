@@ -19,10 +19,13 @@
                 <h1><%= listadoAccesorios.name %></h1>
                 <img src="<%= listadoAccesorios.image %>" alt="">
                 <h3><%= listadoAccesorios.price %></h3>
-                <input type="button" onclick="alert('Agregado al carrito');" value="Add to cart">
+                <div class="botones">
+                    <input type="button" onclick="alert('Agregado al carrito');" value="Add to cart">
+                    <a href="/productDetail" target="_blank" ><input type="button" value="Ver en detalle"></a> 
+                </div>
             </article>
         <%}) %>
-        <br>    
+        <br>        
         </div>
     </main>
     <%- include('../partials/footer') %>
