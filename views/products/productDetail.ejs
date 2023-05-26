@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main/home.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/product/productdetail.css" />
+    <link rel="stylesheet" href="/css/main/home.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/product/productdetail.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -14,7 +14,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Carrito de compras</title>
+    <title>Detalle del Producto</title>
   </head>
   <body>
     <div class="contenedor">
@@ -22,13 +22,19 @@
       <section class="main">
         <div class="container-productdetail">
           <div class="main1">
-            
+            <img src="<%= listado.image %>" alt="">            
           </div>
           <div class="main2">
-            <p>Nombre del producto:</p>
-            <p>Precio:</p>
+            <p>Nombre del producto: <%= listado.name %></p>
+            <p>Precio: <%= listado.price %> </p>
             <p>Fabricante:</p>
             <p>Descripción:</p> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam ipsa omnis, adipisci assumenda at totam nihil provident, ducimus eius ipsam, facilis sapiente ab fugit. Quas deserunt illum sit officiis atque.</p>
+            <form action="/products/<%= listado.id %>/delete?method=delete" method="get">
+              <input type="submit" value="Eliminar Producto"></input>
+            </form>
+            <a href="/products/<%= listado.id %>/update">
+              <button>Editar producto</button>
+            </a>
           </div>
         </div>
       </section>
