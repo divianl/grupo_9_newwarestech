@@ -24,5 +24,5 @@ app.use(productRoutes);
 app.use(express.static(publicPath));
 
 app.listen(3005, ()=>{
-    console.log("Servidor corriendo http://localhost:3005/");
+    console.log("Servidor corriendo http://localhost:3005");
 });

@@ -16,41 +16,69 @@
     <title>Formulario Registro</title>
   </head>
   <body>
-    <div class="contenedor">
+     <div class="contenedor">
       <%- include('../partials/header') %>
-
-      <section class="main">
+       <section class="main">
         <div class="header"><h3>CREA TU CUENTA</h3></div>
         <div class="contenedor">
-          <form>
-            <label for="nombre" placeholder="Escribe su nombre completo"
-              >NOMBRE Y APELLIDOS</label
-            >
-            <input type="text" id="nombre" name="nombre" required />
-
-            <label for="email" placeholder="ingresa correo completo"
-              >EMAIL</label
-            >
-            <input type="email" id="email" name="email" required />
-
-            <label for="contrasena">CONTRASEÑA</label>
-            <input type="password" id="contrasena" name="contrasena" required />
-
-            <label for="confirmar-contrasena">CONFIRMAR CONTRASEÑA</label>
-            <input
-              type="password"
-              id="confirmar-contrasena"
-              name="confirmar-contrasena"
-              required
-            />
-
+          <form> 
+            <div>
             <label>
-              <input type="checkbox" name="robot" required />
-              No soy un robot
+              <span>Nombre Completo</span>
+              <input type="text" autocomplete="off" name=" nombre" required/>
             </label>
+          </div> 
 
-            <input type="submit" value="Crear Cuenta" />
+          <div>
+            <label>
+              <span>Correo</span>
+              <input type="email" autocomplete="off" name=" email" required/>
+            </label>
+          </div>
+
+          <div>
+            <label>
+              <span>Contraseña</span>
+              <input type="password" autocomplete="off" name=" password" required/>
+            </label>
+          </div> 
+
+          <div>
+            <label>
+              <span>Confirmar Contreseña</span>
+              <input type="password" autocomplete="off" name="confirmar-contrasena" required/>
+            </label>
+          </div>
+            <div>
+              <input type="checkbox" name="robot" required />
+              No soy un robot  
+            </div>
+
+              <div>
+              <input type="submit" value="Crear Cuenta" />
+              </div>
+           
+
           </form>
+          <script>
+            const inputs = document.querySelectorAll('input');
+            inputs.forEach(input => {
+              input.onfocus = ()=>{
+                    input.previousElementSibling.classList.add('top');
+                    input.previousElementSibling.classList.add('focus');
+                    input.parentNode.classList.add('focus');
+              }
+              input.onblur =()=>{
+                input.value = input.value.trim();
+                if(input.value.trim().length == 0){
+                  input.previousElementSibling.classList.remove('top');
+                }
+
+                    input.previousElementSibling.classList.remove('focus');
+                    input.parentNode.classList.remove('focus');
+              }
+            })
+          </script>
           <p>¿Ya tienes una cuenta? <a href="#">Inicia sesión</a>.</p>
         </div>
       </section>
