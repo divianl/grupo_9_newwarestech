@@ -11,6 +11,10 @@ main{
     flex-wrap: wrap;
     justify-content: center;
 }
+
+form{
+    width: 80%;
+}
 .article{
     width: 80%;
     display: flex;
@@ -35,10 +39,17 @@ img{
 .botones{
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 100%;
+    margin-top: 5px;
 }
 
+input{
+    border: none;
+}
 
+input .imagen{
+    display: none;
+}
 /*Standard Media query 576, 768, 992, 1200*/
 
 /*Media quierys*/

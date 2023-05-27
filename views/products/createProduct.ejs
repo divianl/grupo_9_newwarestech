@@ -1,0 +1,18 @@
+        <H1>Crear Producto</H1>
+        <form action="/products/createProduct" method="post">
+            <fieldset>
+                <legend>Elige una Categoria</legend>
+                <label><input type="radio" name="categoria" value="Celulares">Celulares</label>
+                <label><input type="radio" name="categoria" value="Informatica">Informatica</label>
+                <label><input type="radio" name="categoria" value="Accesorios">Accesorios</label>
+                <label><input type="radio" name="categoria" value="Impresoras">Impresoras</label>
+            </fieldset><br>
+            <fieldset>
+                <legend>Ingresa la Infomación</legend>
+                <input type="text" name="name" placeholder="nombre"><br>
+                <input type="text" name="image" placeholder="imagen"><br>
+                <input type="text" name="price" placeholder="precio"><br>
+                <input type="text" name="descripcion" placeholder="descripcion"><br>
+            </fieldset><br>
+            <input type="submit" value="agregar">
+        </form>

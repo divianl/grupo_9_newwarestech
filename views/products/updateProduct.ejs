@@ -1,0 +1,18 @@
+<H1>Actualizar Producto</H1>
+<form action="/products/???/update?_method=put" method="post">
+    <fieldset>
+        <legend>Elige una Categoria</legend>
+        <label><input type="radio" name="categoria" value="Celulares">Celulares</label>
+        <label><input type="radio" name="categoria" value="Informatica">Informatica</label>
+        <label><input type="radio" name="categoria" value="Accesorios">Accesorios</label>
+        <label><input type="radio" name="categoria" value="Impresoras">Impresoras</label>
+    </fieldset><br>
+    <fieldset>
+        <legend>Ingresa la Infomación</legend>
+        <input type="text" name="name" value="<%= listado.name %>"><br>
+        <input type="text" name="image" value="<%= listado.image %>"><br>
+        <input type="text" name="price" value="<%= listado.price %>"><br>
+        <input type="text" name="descripcion" value="<%= listado.descripcion %>"><br>
+    </fieldset><br>
+    <input type="submit" value="Guardar cambios">
+</form>
