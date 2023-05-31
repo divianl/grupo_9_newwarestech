@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main/home.css">
+    <link rel="stylesheet" href="/css/product/productlists.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Listado de productos</title>
+</head>
+<body>
+    <%- include('../partials/header') %>
+    <main>
+        <div class="productContainer">
+            <a href="/products/createProduct">Crear producto</a>
+            <% listadoAMostrar.forEach(listadoAMostrar=>{%>
+                <article class="article">
+                    <input type="text" name="nombre" value="<%= listadoAMostrar.name %>">
+                    <img src="<%= listadoAMostrar.image %>" alt="">
+                    <input type="text" name="precio" value="<%= listadoAMostrar.price %>" >
+                        <div class="botones">
+                            <input type="button" onclick="alert('Agregado al carrito');" value="Agregar al Carrito">
+                        </div>
+                </article>
+            <%}) %>
+            <br>    
+        </div>
+    </main>
+    <%- include('../partials/footer') %>
+</body>
+</html> 

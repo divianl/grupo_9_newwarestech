@@ -2,36 +2,25 @@ const express = require('express');
 const productController = require('../controllers/productController');
 const router = express.Router();
 
-//@GET /products/createProduct
-router.get('/createProduct', productController.createProduct);
+    //Requerir productos inicio
+router.get('/productsPhones', productController.getPhones);            //@GET /products/productsPhones                
+router.get('/productsPrinters', productController.getPrinters);        //@GET /products/productsPrinters    
+router.get('/productsInformatica', productController.getInformatica);  //@GET /products/productsInformatica    
+router.get('/productsAccesorios', productController.getAccesorios);    //@GET /products/productsAccesorios
+    //Requerir productos fin
 
-//@POST /products/createProduct
-router.post('/createProduct', productController.addProduct);
+router.get('/createProduct', productController.createProduct); //@GET /products/createProduct
 
-//@GET /products/productCart
-router.get('/productCart', productController.getCart);
+router.post('/createProduct', productController.addProduct); //@POST /products/createProduct
 
-//@GET /products/:id/productDetail
-router.get('/:id/productDetail', productController.getDetail);
+router.get('/productCart', productController.getCart); //@GET /products/productCart
 
-//@DELETE /products/:id/delete
-router.get('/:id/delete', productController.deleteProduct);
+router.get('/:id/productDetail', productController.getDetail); //@GET /products/:id/productDetail
 
-//@GET /products/:id/update
-router.get('/:id/update', productController.getUpdate);
+router.get('/:id/delete', productController.deleteProduct); //@DELETE /products/:id/delete
 
-//@put /products/:id/update
-router.put('/:id/update', productController.updateProduct);
+router.get('/:id/update', productController.getUpdate); //@GET /products/:id/update
 
-//Vistas con listado de productos
-//@GET /products/productsPhones
-router.get('/productsPhones', productController.getPhones);
-//@GET /products/productsPrinters
-router.get('/productsPrinters', productController.getPrinters);
-//@GET /products/productsInformatica
-router.get('/productsInformatica', productController.getInformatica);
-//@GET /products/productsAccesorios
-router.get('/productsAccesorios', productController.getAccesorios);
-
+router.put('/:id/put',  ); //@put /products/:id/put
 
 module.exports = router;

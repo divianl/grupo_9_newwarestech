@@ -9,7 +9,7 @@ const mainRoutes = require('./routes/mainRoutes');
 const userRoutes = require('./routes/userRoutes');
 const productRoutes = require('./routes/productRoutes'); 
 
-// Especificando vistas
+// Especificando rutas de vistas
 app.set('view engine', 'ejs');
 app.set('views',[
     path.join(__dirname, './views/main'),
@@ -19,8 +19,7 @@ app.set('views',[
 ])
 
 // Middlewares
-    //Ruta carpeta publica
-const publicPath = path.join(__dirname,'./public');
+const publicPath = path.join(__dirname,'./public'); //Ruta carpeta publica
 app.use(express.static(publicPath));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -29,9 +28,7 @@ app.use(methodOverride('_method'));
 //Enturadotes (routers)
 app.use(mainRoutes);
 app.use(userRoutes);
-        // /products es un prefijo
-app.use('/products', productRoutes);
-
+app.use('/products', productRoutes); // /products es un prefijo
 
 //Levantando el servidor 
 app.listen(3005, ()=>{
