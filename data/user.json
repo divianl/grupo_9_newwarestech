@@ -4,174 +4,174 @@
         "first_name": "Alexei", 
         "last_name": "Fadell",
         "email": "afadell0@e-recht24.de",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id ": 2,
         "first_name": "Lois",
         "last_name": "Gellan",
         "email": "lgellan1@wisc.edu",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 3,
         "first_name ": "Piper",
         "apellido": "Butterfint",
         "correo electrónico": "pbutterfint2@usgs.gov",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 4,
         "first_name": "Lorettalorna",
         "apellido": "Milverton",
         "correo electrónico": "lmilverton3@liveinternet.ru",
-        "type_user": "Administrador"
+        "user_type": "Administrador"
     },
     {
         "id": 5,
         "nombre": "Terrell",
         "apellido": "Isaak",
         "correo electrónico": "tisaak4@samsung.com",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         " id": 6,
         "first_name": "Clark",
         "last_name": "Dixon",
         "email": "cdixon5@macromedia.com",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 7,
         " first_name": "Grissel",
         "last_name": "Sichardt",
         "email": "gsichardt6@washingtonpost.com",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 8,
         "first_name": "Johnath",
         "apellido": "Ferrarin",
         "correo electrónico": "jferrarin7@behance.net",
-        "type_user": "Administrador"
+        "user_type": "Administrador"
     },
     {
         "id": 9,
         "first_name": "Dael",
         "last_name": "Seamarke",
         "email": "dseamarke8@phpbb.com",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 10,
         "first_name": "Fredric",
         "last_name": "Tellett",
         "email": "ftellett9@nhs.uk",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 11,
         "first_name": "Del",
         "last_name": "Ojeda",
         "email": "dojedaa@instagram.com",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 12,
         "first_name": "Arlen ",
         "apellido": "Troman",
         "correo electrónico": "atromanb@dyndns.org",
-        "type_user": "Administrador"
+        "user_type": "Administrador"
     },
     {
         "id": 13,
         "first_name": "Christy",
         "last_name": "Ditchburn",
         "email": "cditchburnc@blogs.com",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         " id": 14,
         "first_name": "Lyman",
         "last_name": "Ronaldson",
         "email": "lronaldsond@seattletimes.com",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 15,
         " first_name": "Dulcy",
         "last_name": "Nottle",
         "email": "dnottlee@soup.io",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 16,
         "first_name": "Berny",
         "apellido": "Moro",
         "correo electrónico": "bmorof@walmart.com",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 17,
         "first_name": "Eberto",
         "last_name": "Casson",
         "email": "ecassong@pen.io",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         " id": 18,
         "first_name": "Susanetta",
         "last_name": "Spaice",
         "email": "sspaiceh@parallels.com",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 19,
         " first_name": "Cooper",
         "last_name": "Gentric",
         "email": "cgentrici@ucoz.com",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 20,
         "first_name": "Oralla",
         "apellido": "Petersen",
         "correo electrónico": "opetersenj@twitter.com",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 21,
         "nombre": "Guendolen",
         "apellido": "Carbonell",
         "email": "gcarbonellk@marketwatch.com",
-        "type_user": "Administrador"
+        "user_type": "Administrador"
     },
     {
         " id": 22,
         "first_name": "Tripp",
         "last_name": "Philipet",
         "email": "tphilipetl@miitbeian.gov.cn",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 23,
         "first_name": "Tuckie",
         "last_name": "Potteril",
         "email": "tpotterilm@yellowpages.com",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 24,
         "first_name": " Richmond",
         "apellido": "Clift",
         "correo electrónico": "rcliftn@answers.com",
-        "type_user": "Cliente"
+        "user_type": "Cliente"
     },
     {
         "id": 25,
         "nombre": "Carce",
         "apellido": "Hindenburg",
         "email": "chindenburg@economist.com",
-        "type_user": "Cliente "
+        "user_type": "Cliente "
     }
 ]
