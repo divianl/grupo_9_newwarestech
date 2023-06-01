@@ -32,5 +32,5 @@ app.use('/products', productRoutes); // /products es un prefijo
 
 //Levantando el servidor 
 app.listen(3005, ()=>{
-    console.log("Servidor corriendo http://localhost:3005/");
+    console.log("Servidor corriendo http://localhost:3005");
 });
