@@ -28,7 +28,7 @@ app.use(methodOverride('_method'));
 //Enturadotes (routers)
 app.use(mainRoutes);
 app.use(userRoutes);
-app.use('/products', productRoutes); // /products es un prefijo
+app.use('/products', productRoutes); ///products es un prefijo que se usa en el @get
 
 //Levantando el servidor 
 app.listen(3005, ()=>{
