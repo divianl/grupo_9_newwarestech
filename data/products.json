@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "xiaomi",
+    "image": "/images/celulares/xiaomi1.png",
+    "price": "$70.000"
+  },
+  {
+    "id": 2,
+    "name": "Iphone",
+    "image": "/images/celulares/xiaomi2.png",
+    "price": "$6.692.000"
+  },
+  {
+    "name": "Motorola",
+    "image": "/images/celulares/xiaomi2.png",
+    "price": "$800.000",
+    "id": 3
+  }
+]

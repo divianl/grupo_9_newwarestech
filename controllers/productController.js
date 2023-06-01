@@ -3,9 +3,9 @@ const { name } = require('ejs');
 const express = require('express');
 const path = require('path');
 
+const productModel = require('../Models/product')
 
 //Pseudo base de datos
-
 let listadoAMostrar = []; // BD vacia para copiar la BD del listado de productos requeridos
 let listadophones = [
     {
@@ -204,7 +204,10 @@ const productController = {
 
     addProduct: (req,res)=>{ 
         const datos = req.body;
+        console.log(datos);
         datos.id = listado.length + 1; 
+
+        //
         listado.push(datos);
         res.redirect('/products/productsPhones');
     },

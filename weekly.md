@@ -32,4 +32,10 @@
 -Creación de vistas (productsAccesorios, productsInformatica).
 -Actualización del Sprint 3.
 
+<p>
+
+**31 de Mayo**
+
+-Estuvimos viendo tareas pendientes. -Comienzo del Sprint 4. -Dividimos tareas del Sprint 4. -Completamos Trello. -Editamos Retro.MD. -Completamos weekly.
+
 
