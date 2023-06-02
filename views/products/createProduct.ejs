@@ -1,18 +1,19 @@
+<link rel="stylesheet" href="/css/product/style-carrito.css">
         <H1>Crear Producto</H1>
-        <form action="/products/createProduct" method="post">
+        <form action="/products/createProduct" method="post" enctype="multipart/form-data" >
             <fieldset>
                 <legend>Elige una Categoria</legend>
-                <label><input type="radio" name="categoria" value="Celulares">Celulares</label>
-                <label><input type="radio" name="categoria" value="Informatica">Informatica</label>
-                <label><input type="radio" name="categoria" value="Accesorios">Accesorios</label>
-                <label><input type="radio" name="categoria" value="Impresoras">Impresoras</label>
+                <label><input type="radio" name="product_type" value="phones">phones</label>
+                <label><input type="radio" name="product_type" value="software">software</label>
+                <label><input type="radio" name="product_type" value="accesories">accesories</label>
+                <label><input type="radio" name="product_type" value="printer">printer</label>
             </fieldset><br>
             <fieldset>
                 <legend>Ingresa la Infomación</legend>
                 <input type="text" name="name" placeholder="nombre"><br>
-                <input type="text" name="image" placeholder="imagen"><br>
+                <label for="img">Imagen</label><input type="file" name="img" id="img"><br>
                 <input type="text" name="price" placeholder="precio"><br>
-                <input type="text" name="descripcion" placeholder="descripcion"><br>
+                <input type="text" name="description" placeholder="descripcion"><br>
             </fieldset><br>
             <input type="submit" value="agregar">
         </form>

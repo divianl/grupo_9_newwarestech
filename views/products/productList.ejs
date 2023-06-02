@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/main/home.css">
     <link rel="stylesheet" href="/css/product/productlists.css">
+    <link rel="stylesheet" href="/css/product/style-carrito.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Listado de productos</title>
 </head>
@@ -14,18 +15,21 @@
     <%- include('../partials/header') %>
     <main>
         <div class="productContainer">
-            <a href="/products/createProduct">Crear producto</a>
-            <% listadoAMostrar.forEach(listadoAMostrar=>{%>
+            <a href="/products/createProduct">Crear products</a><br>
+            <% products.forEach(products=>{%>
                 <article class="article">
-                    <input type="text" name="nombre" value="<%= listadoAMostrar.name %>">
-                    <img src="<%= listadoAMostrar.image %>" alt="">
-                    <input type="text" name="precio" value="<%= listadoAMostrar.price %>" >
+                    <input type="text" name="nombre" value="<%= products.name %>" readonly> 
+                    <img src="<%= products.image %>" alt="">
+                    <input type="text" name="precio" value="<%= products.price %>" readonly>
                         <div class="botones">
-                            <input type="button" onclick="alert('Agregado al carrito');" value="Agregar al Carrito">
+                        <form action="/products/<%= products.id %>/productCart'" method="post">
+                            <button type="submit" onclick="alert('Agregado al carrito');" >Agregar al Carrito</button>
+                        </form>
+                            <a href="/products/<%= products.id %>/productDetail"><input type="button" value="Ver en detalle"></a> 
                         </div>
                 </article>
             <%}) %>
-            <br>    
+            <br>     
         </div>
     </main>
     <%- include('../partials/footer') %>

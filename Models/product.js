@@ -8,28 +8,49 @@ const productModel = {
     route: '../data/products.json',
 
     //***Para poder utilizar el this, las funciones no pueden sen arrow function =>()***    
-    //Traer todos los productos
-
-    findAll: function(){
+    
+    //Ver base completa, activos e inactivos
+    findComplete: function(){
         const allProductsJSON = fs.readFileSync(path.join(__dirname, this.route), 'utf-8'); //Leer archivo JSON y tipo de caracteres que se usan 
-        const products = JSON.parse(allProductsJSON) //Traducir de JSON a JS
-        return (products);
+        let products = JSON.parse(allProductsJSON) //Traducir de JSON a JS
+        const productsJSON = JSON.stringify(products); // Convertir de JS a JSON 
+        return products;
+    },
+    
+    //Traer todos los productos activos (deleted = false)
+    findAll: function(deleted){
+        const allProductsJSON = fs.readFileSync(path.join(__dirname, this.route), 'utf-8'); //Leer archivo JSON y tipo de caracteres que se usan 
+        let  products = JSON.parse(allProductsJSON) //Traducir de JSON a JS
+        products = products.filter(product => (product.deleted === deleted));
+        const productsJSON = JSON.stringify(products); // Convertir de JS a JSON 
+        return products;
     },
 
     //Traer un prodcuto según su ID
     findByid: function(id){
-        const products = this.findAll();
-        let searched = products.find(product => product.id === id);      
-        if(!searched){ //en caso que no se encuentre el id a buscar
-            searched = null;
+        let products = this.findAll(false);
+        products = products.find(products => products.id === id);            
+        if(!products){ //en caso que no se encuentre el id a buscar
+            products = null;
         }
-        return searched;
+        return products;
+    },
+
+    //Traer un prodcuto según su categoria
+    findByProduct_type: function(product_type, deleted){
+        let products = this.findAll(deleted);
+        products = products.filter(product => (product.product_type === product_type));
+        //muestra solo los productos con la propiedad deleted: false
+        products = products.filter(product => (product.deleted === deleted));
+        const productsJSON = JSON.stringify(products); // Convertir de JS a JSON    
+        return products;
     },
     
-    //Eliminar un producto
+    //Eliminar un producto (softdelete)
     deleteByid: function(id){
-        let products = this.findAll();
-        products = products.filter(product => product.id !== id);
+        let products = this.findComplete();
+        const indice = products.findIndex(productoActual => productoActual.id === id); //Buscar indice del producto
+        products[indice].deleted = true;
         const productsJSON = JSON.stringify(products); // Convertir de JS a JSON
         fs.writeFileSync(path.join(__dirname, this.route), productsJSON);
         return products;
@@ -37,23 +58,25 @@ const productModel = {
     
     //Editar un producto
     updateByid: function(id, newData){
-        let products = this.findAll();
+        let products = this.findComplete();
         const indice = products.findIndex(productoActual => productoActual.id === id); //Buscar indice del producto
         products[indice].name = newData.name;
         products[indice].image = newData.image;
         products[indice].price = newData.price;
+        products[indice].product_type = newData.product_type;
         const productsJSON = JSON.stringify(products); // Convertir de JS a JSON
         fs.writeFileSync(path.join(__dirname, this.route), productsJSON);
         return products;
     },
     
     createOne: function(newProduct){
-        let products = this.findAll();
+        let products = this.findComplete();
         newProduct.id = products[products.length - 1].id + 1;//creo el nuevo id
+        newProduct.deleted = false;
         products.push(newProduct);
         const productsJSON = JSON.stringify(products); 
-        fs.writeFileSync(path.join(__dirname, this.route), productsJSON);    
+        fs.writeFileSync(path.join(__dirname, this.route), productsJSON);   
+        return products; 
     }
 }
-
 module.exports = productModel;
