@@ -22,9 +22,7 @@
                     <img src="<%= products.image %>" alt="">
                     <input type="text" name="precio" value="<%= products.price %>" readonly>
                         <div class="botones">
-                        <form action="/products/<%= products.id %>/productCart'" method="post">
-                            <button type="submit" onclick="alert('Agregado al carrito');" >Agregar al Carrito</button>
-                        </form>
+                            <a href="/products/<%= products.id %>/addToCart"><input type="button" value="Agregar al carrito"></a> 
                             <a href="/products/<%= products.id %>/productDetail"><input type="button" value="Ver en detalle"></a> 
                         </div>
                 </article>

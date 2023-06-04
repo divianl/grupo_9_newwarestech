@@ -37,4 +37,9 @@ router.get('/:id/update', productController.getUpdate); //@GET /products/:id/upd
 router.put('/:id/put', productController.updateProduct ); //@put /products/:id/put  este deberia ser el update
 //CRUD final
 
+//Rutas carrito de compra inicio
+router.get('/:id/addToCart', productController.getaddToCart);//@GET /products/:id/addToCart
+router.get('/cleanCart', productController.getcleanCart);//@GET /products/cleanCart
+//Rutas carrito de compra final
+
 module.exports = router;

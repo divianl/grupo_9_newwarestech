@@ -30,7 +30,7 @@ const productController = {
     //Renderizar productos en la vista 'productList' fin
 
     getCart: (req,res)=>{
-        res.render('productcart')  
+        res.render('productcart',{cartProducts})  
     },
 
     addCart: (req,res)=>{
@@ -100,6 +100,18 @@ const productController = {
         products = productModel.findAll(false)
         res.render('productList', {products})
     },
+    getaddToCart: (req,res)=>{
+        const id = Number(req.params.id);
+        let products1 = productModel.findByid(id)
+        let cartProducts = productModel.cartManager(products1)
+        res.render('productCart', {cartProducts});
+    },
+
+    getcleanCart: (req,res)=>{
+        let clean = [];
+        let deleted = productModel.clean(clean);
+        res.render('productCart', {cartProducts});
+    }
 }
 
 module.exports = productController;

@@ -1,11 +1,10 @@
-//voy por 1h:18sg
-
 const fs = require('fs') 
 const path = require('path');
 
 const productModel = {
     //Ruta del archivo JSON
     route: '../data/products.json',
+    route2: '../data/cartProducts.json',
 
     //***Para poder utilizar el this, las funciones no pueden sen arrow function =>()***    
     
@@ -26,7 +25,7 @@ const productModel = {
         return products;
     },
 
-    //Traer un prodcuto según su ID
+    //Traer un producto según su ID
     findByid: function(id){
         let products = this.findAll(false);
         products = products.find(products => products.id === id);            
@@ -36,7 +35,7 @@ const productModel = {
         return products;
     },
 
-    //Traer un prodcuto según su categoria
+    //Traer un producto según su categoria
     findByProduct_type: function(product_type, deleted){
         let products = this.findAll(deleted);
         products = products.filter(product => (product.product_type === product_type));
@@ -69,6 +68,7 @@ const productModel = {
         return products;
     },
     
+    //Crear un producto
     createOne: function(newProduct){
         let products = this.findComplete();
         newProduct.id = products[products.length - 1].id + 1;//creo el nuevo id
@@ -77,6 +77,26 @@ const productModel = {
         const productsJSON = JSON.stringify(products); 
         fs.writeFileSync(path.join(__dirname, this.route), productsJSON);   
         return products; 
-    }
+    },
+
+    //Agregar products al carro de compras
+    cartManager: function (data) {
+        let productsJSON = fs.readFileSync(path.join(__dirname, this.route2), 'utf-8');
+        let cartProducts = JSON.parse(productsJSON);
+        let cartProductsJSON = JSON.stringify(cartProducts); 
+        cartProducts.push(data);
+
+        productsJSON = JSON.stringify(cartProducts); 
+        fs.writeFileSync(path.join(__dirname, this.route2), productsJSON);   
+        return cartProducts;
+    }, 
+    
+        //Vaciar carro de compras
+        clean: function (data) {
+        cartProducts = data;
+        const productsJSON = JSON.stringify(cartProducts); // Convertir de JS a JSON
+        fs.writeFileSync(path.join(__dirname, this.route2), productsJSON);
+        return cartProducts;
+        }  
 }
 module.exports = productModel;
