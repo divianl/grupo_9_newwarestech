@@ -14,28 +14,10 @@
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="/images/logo.png" alt="logo">
-        <div class="busqueda">
-            <input class="barra" type="text" placeholder="  ¿Qué estas buscando?"> 
-            <button class="lupa"> <i class="fa-solid fa-magnifying-glass"> </i> </button>
-        </div>
-        <div class="iconos-header">
-            <a href="/login"> <i class="fa-solid fa-circle-user"></i></a> 
-            <a href="/products/productCart"><i class="fa-solid fa-cart-shopping"></i> </a>
-        </div>
-    </header>
-    <nav>
-        <a href="/products/productsPhones"> CELULARES </a>
-        <a href="/products/productsInformatica"> INFORMATICA </a>
-        <a href="/products/productsAccesorios"> ACCESORIOS </a>
-        <a href="/products/productsPrinters"> IMPRESORAS </a>
-    </nav>
+    <%- include('../partials/header') %>
     <main>
-        <a href="/products/cleanCart"><input type="button" value="Limpiar Carrito"></a> 
         <section class="productos">
             <div class="productos-items">
-
                 <% cartProducts.forEach(cartProducts=>{%>
                     <article class="article">
                         <input type="text" name="nombre" value="<%= cartProducts.name %>" readonly> 
@@ -43,55 +25,6 @@
                         <input type="text" name="precio" value="<%= cartProducts.price %>" readonly>
                     </article>
                 <%}) %>
-
-            <!--    <div class="celular">
-                <h5 class="titulo"> Motorola G32 </h5>
-                <img class="img" src="/images/g32.png" alt="Motorola g32">
-                <p class="precio"> $82.000 </p>
-                <button class="boton"> Agregar al Carrito </button>
-                </div>
-            <div class="celular">
-                <h5 class="titulo"> Motorola E13 </h5>
-                <img class="img" src="/images/E13.png" alt="Motorola e13">
-                <p class="precio"> $48.000 </p>
-                <button class="boton"> Agregar al Carrito </button>
-            </div>
-            <div class="celular">
-                <h5 class="titulo"> Motorola G82 </h5>
-                <img class="img" src="/images/G82.png" alt="Motorola g82">
-                <p class="precio"> $65.000 </p>
-                <button class="boton"> Agregar al Carrito </button>
-            </div>
-            <div class="celular">
-                <h5 class="titulo"> Motorola E40 </h5>
-                <img class="img" src="/images/E40.png" alt="Motorola e40">
-                <p class="precio"> $52.000 </p>
-                <button class="boton"> Agregar al Carrito </button>
-            </div>
-            <div class="celular">
-                <h5 class="titulo"> Samsung A12 </h5>
-                <img class="img" src="/images/A12.png" alt="Samsung a12">
-                <p class="precio"> $40.000 </p>
-                <button class="boton"> Agregar al Carrito </button>
-            </div>
-            <div class="celular">
-                <h5 class="titulo"> Samsung A03 </h5>
-                <img class="img" src="/images/A03.png" alt="Samsung a03">
-                <p class="precio"> $45.000 </p>
-                <button class="boton"> Agregar al Carrito </button>
-            </div>
-            <div class="celular">
-                <h5 class="titulo"> Samsung A32</h5>
-                <img class="img" src="/images/A32.png" alt="Samsung a32">
-                <p class="precio"> $85.000 </p>
-                <button class="boton"> Agregar al Carrito </button>
-            </div>
-            <div class="celular">
-                <h5 class="titulo"> Samsung A50 </h5>
-                <img class="img" src="/images/A50.png" alt="Samsung a50">
-                <p class="precio"> $72.000 </p>
-                <button class="boton"> Agregar al Carrito </button>
-            </div>-->
             </div>
         <div class="carrito">
             <div>
@@ -132,6 +65,9 @@
                 </div>
                 <div>
                     <button class="pagar"> Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+                    <a href="/products/cleanCart">
+                        <button class="pagar"> Limpiar Carrito <i class="fa-solid fa-bag-shopping"></i></button>
+                    </a>
                 </div>
             </div>
         </div>

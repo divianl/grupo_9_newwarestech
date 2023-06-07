@@ -1,8 +1,17 @@
 const express = require('express');
 const multer = require('multer');
+const {body} = require('express-validator');
 const productController = require('../controllers/productController');
 const router = express.Router();
 
+//validaciones
+const validateAddProduct = [
+    body('product_type').notEmpty().withMessage('Selecciona una categoria'),
+    body('name').notEmpty().withMessage('Escriba el nombre del producto'),
+    body('price').notEmpty().withMessage('Escriba el precio del producto'),
+    body('description').notEmpty().withMessage('Escriba la descripción del producto'),
+    body('img').notEmpty().withMessage('Agregue la imagen del producto')
+]
 
 //Configuración multer inicio
 const storage = multer.diskStorage({
@@ -30,7 +39,7 @@ router.post('/:id/productCart', productController.addCart); //@POST /products/pr
 
 //CRUD inicio
 router.get('/createProduct', productController.createProduct); //@GET /products/createProduct
-router.post('/createProduct', upload.single('img'), productController.addProduct); //@POST /products/createProduct
+router.post('/createProduct', validateAddProduct, upload.single('img'), productController.addProduct); //@POST /products/createProduct
 router.get('/:id/productDetail', productController.getDetail); //@GET /products/:id/productDetail
 router.get('/:id/delete', productController.deleteProduct); //@DELETE /products/:id/delete
 router.get('/:id/update', productController.getUpdate); //@GET /products/:id/update

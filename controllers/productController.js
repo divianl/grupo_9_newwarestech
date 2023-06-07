@@ -29,10 +29,6 @@ const productController = {
     },
     //Renderizar productos en la vista 'productList' fin
 
-    getCart: (req,res)=>{
-        res.render('productcart',{cartProducts})  
-    },
-
     addCart: (req,res)=>{
         res.send(console.log('hola id: ' + products.id));
     },
@@ -59,10 +55,17 @@ const productController = {
     },
 
     addProduct: (req,res)=>{ 
-        newProduct = req.body;
-        newProduct.image = '/images/' + req.file.filename;
-        let products = productModel.createOne(newProduct)
-        res.render('productList', {products})
+        const body = '/createProduct';
+        if(req.file){
+            newProduct = req.body;
+            newProduct.image = '/images/' + req.file.filename;
+            let products = productModel.createOne(newProduct)
+            res.render('productList', {products})
+        } 
+        /*else { queda pendiente poner un mensaje par avisar que no se agregó una imagen, y
+            refrescar la vista
+            res.status('No se cargó una imagen, intentar nuevamente').send(body);
+        }*/
     },
 
     getUpdate: (req,res)=>{
@@ -74,24 +77,8 @@ const productController = {
     updateProduct: (req,res)=>{
         const id = Number(req.params.id);
         let newData = req.body;
-        console.log(newData);
         let products = productModel.updateByid(id, newData);
         res.render('productList', {products})
-        /*
-        const id = Number(req.params.id);
-        let newData = req.params.body;
-        console.log(newData);
-        let products = productModel.updateByid(id, newData);
-        
-        const id = Number(req.params.id); 
-        const nuevosDatos = req.body;
-        const productoAActualizar = products.find(productoActual => productoActual.id === id);
-        const indice = listado.indexOf(productoAActualizar);
-        listado[indice].name = nuevosDatos.name;
-        listado[indice].image = nuevosDatos.image;
-        listado[indice].price = nuevosDatos.price;
-        listado[indice].descripcion = nuevosDatos.descripcion;
-        res.redirect('/products/productsPhones');*/
     }, 
 
     deleteProduct: (req,res)=>{
@@ -111,6 +98,11 @@ const productController = {
         let clean = [];
         let deleted = productModel.clean(clean);
         res.render('productCart', {cartProducts});
+    },
+
+    getCart: (req,res)=>{
+        let cartProducts = productModel.checkCart();
+        res.render('productcart',{cartProducts})  
     }
 }
 

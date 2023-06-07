@@ -13,22 +13,10 @@
 </head>
 <body>
     <%- include('../partials/header') %>
-    <main>
-        <div class="productContainer">
-            <% products.forEach(products=>{%>
-                <article class="article">
-                    <input type="text" name="nombre" value="<%= products.name %>" readonly> 
-                    <img src="<%= products.image %>" alt="">
-                    <input type="text" name="precio" value="<%= products.price %>" readonly>
-                        <div class="botones">
-                            <a href="/products/<%= products.id %>/addToCart"><input type="button" value="Agregar al carrito"></a> 
-                            <a href="/products/<%= products.id %>/productDetail"><input type="button" value="Ver en detalle"></a> 
-                        </div>
-                </article>
-            <%}) %>
-            <br>     
-        </div>
-    </main>
+    <br><br><br><br><br>
+    <a href="/users/userList">Usuarios</a><br><br><br>
+    <a href="/products/createProduct">Crear productos</a><br>
+    <br><br><br><br><br>
     <%- include('../partials/footer') %>
 </body>
 </html> 

@@ -90,7 +90,12 @@ const productModel = {
         fs.writeFileSync(path.join(__dirname, this.route2), productsJSON);   
         return cartProducts;
     }, 
-    
+    checkCart: function () {
+        let productsJSON = fs.readFileSync(path.join(__dirname, this.route2), 'utf-8');
+        let cartProducts = JSON.parse(productsJSON);
+        let cartProductsJSON = JSON.stringify(cartProducts); 
+        return cartProducts;
+    }, 
         //Vaciar carro de compras
         clean: function (data) {
         cartProducts = data;
