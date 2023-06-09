@@ -43,7 +43,7 @@ router.post('/createProduct', validateAddProduct, upload.single('img'), productC
 router.get('/:id/productDetail', productController.getDetail); //@GET /products/:id/productDetail
 router.get('/:id/delete', productController.deleteProduct); //@DELETE /products/:id/delete
 router.get('/:id/update', productController.getUpdate); //@GET /products/:id/update
-router.put('/:id/put', productController.updateProduct ); //@put /products/:id/put  este deberia ser el update
+router.put('/:id/put', productController.updateProduct ); //@put /products/:id/put  este es el update
 //CRUD final
 
 //Rutas carrito de compra inicio

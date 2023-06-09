@@ -77,8 +77,25 @@ const productController = {
     updateProduct: (req,res)=>{
         const id = Number(req.params.id);
         let newData = req.body;
+        const product_type = newData.product_type;
         let products = productModel.updateByid(id, newData);
-        res.render('productList', {products})
+        switch (product_type) {
+            case 'phones':
+                return productController.getPhones(req, res);
+            break;
+            case 'printer':
+                return productController.getPrinters(req, res);
+            break;
+            case 'accesories':
+                return productController.getAccesorios(req, res);
+            break;
+            case 'software':
+                return productController.getInformatica(req, res);
+            break;
+        
+            default:
+                break;
+        }
     }, 
 
     deleteProduct: (req,res)=>{
@@ -87,11 +104,30 @@ const productController = {
         products = productModel.findAll(false)
         res.render('productList', {products})
     },
+
     getaddToCart: (req,res)=>{
         const id = Number(req.params.id);
         let products1 = productModel.findByid(id)
+        const product_type = products1.product_type;
         let cartProducts = productModel.cartManager(products1)
-        res.render('productCart', {cartProducts});
+        console.log(product_type);
+        switch (product_type) {
+            case 'phones':
+                return productController.getPhones(req, res);
+            break;
+            case 'printer':
+                return productController.getPrinters(req, res);
+            break;
+            case 'accesories':
+                return productController.getAccesorios(req, res);
+            break;
+            case 'software':
+                return productController.getInformatica(req, res);
+            break;
+        
+            default:
+                break;
+        }
     },
 
     getcleanCart: (req,res)=>{

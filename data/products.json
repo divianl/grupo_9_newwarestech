@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "xiaomi",
+    "name": "xiaomi1",
     "image": "/images/celulares/xiaomi1.png",
     "price": "$70.000",
     "product_type": "phones",
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "name": "impresora hp",
+    "name": "impresora hp1",
     "image": "/images/impresoras/impresora_2.png",
     "price": "$110.000",
     "product_type": "printer",
@@ -97,7 +97,7 @@
   },
   {
     "id": 13,
-    "name": "word",
+    "name": "word1",
     "image": "/images/informatica/word.png",
     "price": "$280",
     "product_type": "software",
@@ -145,7 +145,7 @@
   },
   {
     "id": 19,
-    "name": "computadora",
+    "name": "computadora1",
     "image": "/images/accesorios/computadoras/computadora1.png",
     "price": "$240.000",
     "product_type": "accesories",

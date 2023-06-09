@@ -1,1 +1,1 @@
-[]
+[{"id":13,"name":"word","image":"/images/informatica/word.png","price":"$280","product_type":"software","deleted":false},{"id":19,"name":"computadora","image":"/images/accesorios/computadoras/computadora1.png","price":"$240.000","product_type":"accesories","deleted":false},{"id":6,"name":"huawei","image":"/images/celulares/huawei2.png","price":"$75.000","product_type":"phones","deleted":false}]
