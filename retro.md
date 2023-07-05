@@ -19,3 +19,14 @@ Para este sprint 2 nos reunimos dos veces por semana fuera de clases para desaro
 <p>
 El campañero Hugo Ruíz por temas familiares no pudo continuar con el grupo, la carga la distribuímos entre todos para lograr llegar a la meta del proyecto integrador.
 <p> 
+
+
+**Sprint 5**
+
+<p>
+Para la entrega del Sprint 5 estuvimos con dificultades para reunirnos y ponernos de acuerdo a la hora de realizar las tareas. El horario de diferencia entre Colombia y Argentina nos juega un poco en contra a la hora de coincidir.
+<p>
+Mas alla de no poder juntarnos a hacer las dailies, estamos comunicados por el grupo de WhatsApp.
+<p>
+En este Sprint, tuvimos un nuevo integrante en el proyecto. Le informamos de que se trata y como venimos trabajando. Lo unimos a Trello y en Github.
+
