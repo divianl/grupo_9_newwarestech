@@ -21,19 +21,20 @@ azul: #1836B2*/
 
 /* Estilos header*/
 header{
-    height: 15%;
+    height: 20%;
     background-color: #A066CB;
 }
 /*nav-bar*/
 nav{
     box-sizing: border-box;
-    padding: 5px;
+    padding: 10px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content:space-around;
     flex-direction: row;
     border: none;
+    margin-right: 10;
 }
 .nav-logo{
     display: flex;
@@ -49,8 +50,8 @@ nav{
     height: 100%;
 }
 .nav-botones{
-    width: 10%;
-    height: 100%;
+    width: 20%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -58,18 +59,20 @@ nav{
 }
 
 .nav-botones i{
-    font-size: 30px;
+    font-size: 10px;
 }
 
 .login, .cart{
-    width: 45%;
+    width: 20%;
     display: flex;
     justify-content: center;
 }
 
 .login a, .cart a{
     background-color: rgba(245, 245, 245, 65%);
-    border-radius: 35%;
+    border-radius: 10%;
+    margin: auto;
+    justify-content: space-around;
 } 
 
 .busqueda1{
@@ -77,6 +80,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 .busqueda2{
     display: flex;
@@ -161,7 +165,7 @@ footer{
 .footer-about-us{
     box-sizing: border-box;
     width: 30%;
-    padding: 2px;
+    padding: 5px;
 }
 
 .about-us1, .about-us2{
@@ -197,25 +201,25 @@ footer{
 }
 
 .contact1{
-    height: 40%;
+    height: 20%;
 }
 
 .contact1 h3{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .contact2{
-    height: 60%;
+    height: 5%;
 }
 
 .contact2 a{
     background-color: rgba(245, 245, 245, 65%);
-    font-size: 45px;
+    font-size: 5px;
     border-radius: 20%;
 }
 
 .contact2 a i{
-    font-size: 50px;
+    font-size: 10px;
 }
 
 /* Colores de marcar https://usbrandcolors.com/*/

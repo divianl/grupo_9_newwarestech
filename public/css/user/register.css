@@ -66,6 +66,8 @@ label{
   border-radius: 4px;
   transition: .25s; 
 }
+
+
  label input{
   display: flex;
   border: none;
@@ -80,6 +82,7 @@ label{
   position: absolute;
   top: 8px;
   left: 10px;
+  margin-right: 50px;
   transition: .25s;
   align-items: center;
   
@@ -95,8 +98,8 @@ label{
  }
 
  label span.top{
-  left: 2px;
-  top: -10px;
+  left: 10px;
+  top: 10px;
   font-size: 10px;
   background: white;
   padding: 0 5px;

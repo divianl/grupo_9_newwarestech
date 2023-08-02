@@ -52,3 +52,10 @@
 -Editamos Retro.MD.
 -Completamos weekly.
 
+**13 de Julio de 2023**
+
+-Reunión del Sprint 5 y 6. 
+-Asignar tareas, Miguel Abentín se une al grupo del Sprint.
+-Realizar asiganciones en trello. 
+
+
